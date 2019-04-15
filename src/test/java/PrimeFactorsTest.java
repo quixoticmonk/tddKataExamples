@@ -15,13 +15,13 @@ public class PrimeFactorsTest {
     }
 
     @Test
-    public void shouldReturn2tfor2() {
+    public void shouldReturn2for2() {
         assertThat(factorsOf(2), is((Collections.singletonList(2))));
     }
 
     @Test
-    public void shouldReturn3tfor3() {
-        assertThat(factorsOf(3), is((Arrays.asList(3))));
+    public void shouldReturn3for3() {
+        assertThat(factorsOf(3), is((Collections.singletonList(3))));
     }
 
     @Test
