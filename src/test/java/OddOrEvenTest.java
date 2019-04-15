@@ -10,12 +10,8 @@ import static org.hamcrest.MatcherAssert.assertThat;
 public class OddOrEvenTest {
 
     @Test
-    public void shouldReturnEvenwWhenGiven0() {
-        assertThat(oddOrEven(Collections.<Integer>emptyList()), is("Even"));
-    }
-
-    @Test
     public void shouldReturnEven() {
+        assertThat(oddOrEven(Collections.<Integer>emptyList()), is("Even"));
         assertThat(oddOrEven(Arrays.asList(0, 2, 4)), is("Even"));
         assertThat(oddOrEven(Arrays.asList(0, -2, -4)), is("Even"));
         assertThat(oddOrEven(Arrays.asList(0, -1, -5)), is("Even"));
